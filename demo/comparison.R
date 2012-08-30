@@ -12,7 +12,7 @@ system.time(my.runif(TPB,1,1,1,engine="C"))
 # Initial call to gpu
 (initalization.time = system.time(my.runif(TPB,1,1,1,engine="G")))
 
-rep        = 1:3
+rep        = 1:10
 n.uniforms = TPB*10^ (0:3)
 p.accepts  =     10^-(0:3)
 n.intops   =     10^ (0:3)

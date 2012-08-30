@@ -30,8 +30,8 @@ all = all[ordr,]
 
 
 # Figure
-all$n.samples2 = exp(jitter(log(all$n.samples)))
 names(all) = c("n.samples","p.accept","int.ops","dou.ops","cpu","gpu","ratio")
+all$n.samples2 = exp(jitter(log(all$n.samples)))
 pdf("rejection.pdf")
 qplot(n.samples2, ratio, data=all, log='xy', 
       colour=as.factor(int.ops), 
